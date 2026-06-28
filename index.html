@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yap</title>
+<style>
+:root{
+ --bg:#eef0f3; --card:#ffffff; --line:#e2e4e9; --fg:#1c1f24; --txt:#3b414a; --mut:#737a85;
+ --accent:#2f8a4e; --soon:#737a85;
+}
+@media (prefers-color-scheme:dark){:root{
+ --bg:#101216; --card:#1b1e24; --line:#2b303a; --fg:#e8eaf0; --txt:#c2c8d2; --mut:#8a909c;
+ --accent:#6fcf97; --soon:#8a909c;
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+ line-height:1.45;-webkit-text-size-adjust:100%}
+.wrap{max-width:620px;margin:0 auto;padding:34px 18px 40px}
+h1{font-size:24px;margin:0 0 4px;font-weight:800;color:var(--fg)}
+.sub{color:var(--mut);font-size:14.5px;margin:0 0 26px}
+.card{display:block;text-decoration:none;
+ background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+ border-radius:14px;padding:16px 17px;margin-bottom:13px;color:var(--txt)}
+a.card:active{transform:scale(.99)}
+.name{display:block;color:var(--fg);font-weight:700;font-size:17px}
+.what{display:block;color:var(--txt);font-size:14px;margin-top:4px}
+.chips{margin-top:11px}
+.chip{display:inline-flex;align-items:center;gap:6px;
+ background:var(--bg);border:1px solid var(--line);border-radius:999px;
+ padding:3px 11px;margin:0 6px 4px 0;font-size:12.5px;font-weight:600;color:var(--fg)}
+.chip.built{color:var(--accent)}
+.chip.built::before{content:"";width:8px;height:8px;border-radius:999px;background:var(--accent)}
+.chip.soon{color:var(--soon)}
+.foot{color:var(--mut);font-size:12px;margin-top:24px;line-height:1.5}
+</style></head>
+<body><div class="wrap">
+<h1>yap</h1>
+<p class="sub">i build AI systems for me and my friends</p>
+<div class="card"><span class="name">Quest Log</span><span class="what">Where I launch my agents and run every project from one place</span><span class="chips"><span class="chip built">in daily use</span><span class="chip soon">repo soon</span></span></div>
+<div class="card"><span class="name">ClearView</span><span class="what">A morning dashboard that reads each story through opposing lenses — and weighs the money on Polymarket against the narrative</span><span class="chips"><span class="chip built">live · daily</span><span class="chip soon">repo soon</span></span></div>
+<div class="card"><span class="name">Hermes</span><span class="what">My always-on server — it gathers my notes and hosts the agents</span><span class="chips"><span class="chip built">live</span><span class="chip soon">repo soon</span></span></div>
+<div class="card"><span class="name">Pain Harvester</span><span class="what">Surfaces real problems people post — exact quote, source link, AI filtering the noise — as fuel for product ideas</span><span class="chips"><span class="chip built">live · nightly</span><span class="chip soon">repo soon</span></span></div>
+<div class="card"><span class="name">Connections</span><span class="what">Once a week it surfaces non-obvious links across my notes, on its own</span><span class="chips"><span class="chip built">live · weekly</span><span class="chip soon">repo soon</span></span></div>
+<p class="foot">What I&#x27;m building. Repo links coming soon.</p>
+</div></body></html>
