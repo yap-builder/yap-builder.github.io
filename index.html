@@ -46,6 +46,10 @@
     margin-top:clamp(20px,3vw,34px); font-size:clamp(18px,2.4vw,27px);
     font-weight:400; letter-spacing:-.012em; color:var(--ink-soft); max-width:30ch;
   }
+  .lede{
+    margin:clamp(22px,3.4vw,40px) 0 0; font-size:clamp(16px,1.75vw,20px);
+    line-height:1.5; color:var(--ink-soft); max-width:48ch; letter-spacing:-.01em;
+  }
   .sec-rule{
     display:flex; align-items:baseline; gap:18px; margin-top:clamp(20px,4vw,40px);
     padding-bottom:13px; border-bottom:1px solid var(--ink);
@@ -120,6 +124,10 @@
   .repo{font-size:10.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); font-weight:600}
   a.repo{text-decoration:none}
   a.repo:hover{color:var(--accent)}
+  .infra{
+    margin-top:clamp(22px,3.4vw,40px); font-size:13px; line-height:1.5;
+    color:var(--muted); font-weight:500; letter-spacing:.01em; max-width:60ch;
+  }
   .foot{
     margin-top:clamp(54px,8vw,96px); padding-top:18px; border-top:1px solid var(--ink);
     display:flex; justify-content:space-between; align-items:baseline; gap:18px; flex-wrap:wrap;
@@ -147,24 +155,22 @@
     </header>
     <section class="hero">
       <h1 class="name">yap<span class="stop">.</span></h1>
-      <p class="tagline">i build AI systems for me and my friends</p>
+      <p class="tagline">i build AI systems i actually use</p>
+      <p class="lede">A setup that mostly runs itself — it pulls the web, runs my agents, and hands me what&#x27;s worth seeing. I built and run the whole thing.</p>
     </section>
-    <div class="sec-rule">
-      <h2>Work</h2>
-      <span class="count">01 — 05</span>
-    </div>
+    <div class="sec-rule"><h2>What it makes</h2><span class="count">01 — 03</span></div>
     <ol class="work">
       <li class="entry">
         <div class="num">01</div>
         <div class="body">
           <div class="ttl-row">
-            <span class="ttl">Quest Log</span>
+            <span class="ttl">Pain Harvester</span>
             <span class="arrow" aria-hidden="true">→</span>
           </div>
-          <p class="desc">Where I launch my agents and run every project from one place</p>
+          <p class="desc">Pulls the real problems people post and cuts the noise. A pain only counts if it ships with the exact quote from the post — so the model can&#x27;t invent one. First full run: 63 candidates → 26 real pains, 2 fabrications caught by the gate.</p>
         </div>
         <div class="aside">
-          <span class="status pulse"><span class="led"></span>in daily use</span>
+          <span class="status pulse"><span class="led"></span>live · daily</span>
           <span class="repo">repo soon</span>
         </div>
       </li>
@@ -175,7 +181,7 @@
             <span class="ttl">ClearView</span>
             <span class="arrow" aria-hidden="true">→</span>
           </div>
-          <p class="desc">A morning dashboard that reads each story through opposing lenses — and weighs the money on Polymarket against the narrative</p>
+          <p class="desc">Runs fully on its own. Every morning it reads the day&#x27;s stories through opposing lenses and flags where each side is blind, then sets the money on Polymarket against the narrative — where the bets and the story disagree is the signal.</p>
         </div>
         <div class="aside">
           <span class="status pulse"><span class="led"></span>live · daily</span>
@@ -186,38 +192,10 @@
         <div class="num">03</div>
         <div class="body">
           <div class="ttl-row">
-            <span class="ttl">Hermes</span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </div>
-          <p class="desc">My always-on server — it gathers my notes and hosts the agents</p>
-        </div>
-        <div class="aside">
-          <span class="status pulse"><span class="led"></span>live</span>
-          <span class="repo">repo soon</span>
-        </div>
-      </li>
-      <li class="entry">
-        <div class="num">04</div>
-        <div class="body">
-          <div class="ttl-row">
-            <span class="ttl">Pain Harvester</span>
-            <span class="arrow" aria-hidden="true">→</span>
-          </div>
-          <p class="desc">Surfaces real problems people post — exact quote, source link, AI filtering the noise — as fuel for product ideas</p>
-        </div>
-        <div class="aside">
-          <span class="status pulse"><span class="led"></span>live · nightly</span>
-          <span class="repo">repo soon</span>
-        </div>
-      </li>
-      <li class="entry">
-        <div class="num">05</div>
-        <div class="body">
-          <div class="ttl-row">
             <span class="ttl">Connections</span>
             <span class="arrow" aria-hidden="true">→</span>
           </div>
-          <p class="desc">Once a week it surfaces non-obvious links across my notes, on its own</p>
+          <p class="desc">Once a week, on its own, it reads back through my notes and surfaces connections I never drew myself — I keep the ones that hold.</p>
         </div>
         <div class="aside">
           <span class="status pulse"><span class="led"></span>live · weekly</span>
@@ -225,6 +203,38 @@
         </div>
       </li>
     </ol>
+    <div class="sec-rule"><h2>How it runs</h2><span class="count">04 — 05</span></div>
+    <ol class="work">
+      <li class="entry">
+        <div class="num">04</div>
+        <div class="body">
+          <div class="ttl-row">
+            <span class="ttl">Hermes</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </div>
+          <p class="desc">The always-on server the rest runs on — it pulls my notes in and hosts the agents. The bet: a cheap model with good inputs and tight routing beats a big expensive one. Locked down so it can&#x27;t rewrite its own skills.</p>
+        </div>
+        <div class="aside">
+          <span class="status pulse"><span class="led"></span>live</span>
+          <span class="repo">repo soon</span>
+        </div>
+      </li>
+      <li class="entry">
+        <div class="num">05</div>
+        <div class="body">
+          <div class="ttl-row">
+            <span class="ttl">Quest Log</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </div>
+          <p class="desc">One cockpit — projects, quests and agents all launch from a single place, so I run the whole operation without juggling ten terminals.</p>
+        </div>
+        <div class="aside">
+          <span class="status pulse"><span class="led"></span>in daily use</span>
+          <span class="repo">repo soon</span>
+        </div>
+      </li>
+    </ol>
+    <p class="infra">Underneath: fetchers for X, YouTube and Reddit — the Reddit one needs a real browser engine to get past the bot-check.</p>
     <footer class="foot">
       <p class="lead">What I'm building. <span class="soon">Repo links coming soon.</span></p>
       <span class="sig">yap — 2026</span>
